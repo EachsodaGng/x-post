@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+bun.lockb
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary & Media Artifacts
+/tmp/
+tmp/
+*.tmp
+*.log
+.cache/
+x-browser-profile/
+
+# Distributables (keep dist directory tracking if needed, or track .skill)
+dist/*.zip
+
+# IDE & Editor Configs
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.sublime-project
+*.sublime-workspace

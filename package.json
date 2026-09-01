@@ -1,0 +1,56 @@
+{
+  "name": "x-post",
+  "version": "1.0.0",
+  "description": "Universal agent skill and CLI for publishing posts, images, videos, long-form articles, and translated video workflows to X (Twitter) using real Chrome and CDP.",
+  "type": "module",
+  "main": "bin/x-post.js",
+  "bin": {
+    "x-post": "./bin/x-post.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imMamdouhaboammar/x-post.git"
+  },
+  "homepage": "https://github.com/imMamdouhaboammar/x-post#readme",
+  "bugs": {
+    "url": "https://github.com/imMamdouhaboammar/x-post/issues"
+  },
+  "files": [
+    "bin",
+    "scripts",
+    "references",
+    "SKILL.md",
+    "marketplace.json",
+    "install.sh"
+  ],
+  "scripts": {
+    "start": "bun bin/x-post.js",
+    "post": "bun scripts/x-browser.ts",
+    "video": "bun scripts/x-video.ts",
+    "quote": "bun scripts/x-quote.ts",
+    "article": "bun scripts/x-article.ts",
+    "translate": "bun scripts/x-translate-video.ts"
+  },
+  "keywords": [
+    "x",
+    "twitter",
+    "automation",
+    "agent-skill",
+    "skills.sh",
+    "claude-code",
+    "cursor",
+    "codex",
+    "gemini",
+    "antigravity",
+    "social-media",
+    "cdp",
+    "chrome",
+    "bun"
+  ],
+  "author": "Mamdouh Aboammar <https://github.com/imMamdouhaboammar>",
+  "license": "MIT",
+  "engines": {
+    "bun": ">=1.0.0",
+    "node": ">=18.0.0"
+  }
+}

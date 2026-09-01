@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json.schemastore.org/claude-plugin-manifest.json",
+  "name": "x-post",
+  "displayName": "X (Twitter) Universal Publisher",
+  "version": "1.0.0",
+  "description": "Anti-bot-resilient publishing toolchain for X (Twitter) supporting text, images, videos, thread chains, quote tweets, Markdown X Articles, and multi-language video subtitle translation via real Chrome CDP.",
+  "author": {
+    "name": "Mamdouh Aboammar",
+    "url": "https://github.com/imMamdouhaboammar"
+  },
+  "homepage": "https://skills.sh/x-post",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imMamdouhaboammar/x-post.git"
+  },
+  "license": "MIT",
+  "categories": [
+    "social-media",
+    "automation",
+    "publishing",
+    "video-processing",
+    "agent-tools"
+  ],
+  "keywords": [
+    "x",
+    "twitter",
+    "cdp",
+    "automation",
+    "markdown-articles",
+    "video-translation",
+    "whisper",
+    "ffmpeg",
+    "claude-code",
+    "skills.sh"
+  ],
+  "compatibility": {
+    "claudeCode": ">=1.0.0",
+    "claudeDesktop": ">=1.0.0",
+    "cursor": ">=0.40.0",
+    "codex": ">=0.1.0",
+    "opencode": ">=1.0.0",
+    "antigravity": ">=1.0.0",
+    "windsurf": ">=1.0.0",
+    "cline": ">=2.0.0",
+    "rooCode": ">=3.0.0"
+  },
+  "entrypoint": "SKILL.md",
+  "bin": {
+    "x-post": "./bin/x-post.js"
+  },
+  "capabilities": [
+    {
+      "name": "regular-posts",
+      "description": "Publish tweets with up to 4 images and sequential thread replies",
+      "command": "bun scripts/x-browser.ts"
+    },
+    {
+      "name": "video-posts",
+      "description": "Upload MP4/MOV/WebM videos with automated transcode monitoring",
+      "command": "bun scripts/x-video.ts"
+    },
+    {
+      "name": "quote-tweets",
+      "description": "Quote existing public tweets with custom commentary",
+      "command": "bun scripts/x-quote.ts"
+    },
+    {
+      "name": "x-articles",
+      "description": "Publish rich-text Markdown articles with cover images and embedded media",
+      "command": "bun scripts/x-article.ts"
+    },
+    {
+      "name": "video-translation",
+      "description": "Transcribe with Whisper, generate translation draft, burn subtitles with FFmpeg, and republish with attribution",
+      "command": "bun scripts/x-translate-video.ts"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://skills.sh/schema.json",
+  "name": "x-post",
+  "version": "1.0.0",
+  "description": "Universal anti-bot-resilient publishing toolchain for X (Twitter) leveraging real Chrome instances controlled via Chrome DevTools Protocol (CDP).",
+  "repository": "https://github.com/imMamdouhaboammar/x-post",
+  "author": "Mamdouh Aboammar",
+  "license": "MIT",
+  "skill": "SKILL.md",
+  "tags": [
+    "x",
+    "twitter",
+    "automation",
+    "social-media",
+    "video-translation",
+    "markdown-articles",
+    "cdp"
+  ]
+}
