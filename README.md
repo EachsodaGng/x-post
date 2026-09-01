@@ -94,23 +94,23 @@ npx skills add https://github.com/imMamdouhaboammar/x-post
 
 ```mermaid
 flowchart TD
-    A[Agent / User Command] --> B[x-post CLI Engine]
-    B --> C[Launch Real Google Chrome]
-    C -->|Flag| D[--disable-blink-features=AutomationControlled]
-    C -->|Profile| E[Persistent Session Cache ~/.local/share/x-browser-profile]
-    B -->|WebSocket| F[Chrome DevTools Protocol - CDP]
+    A["Agent or User Command"] --> B["x-post CLI Engine"]
+    B --> C["Launch Real Google Chrome"]
+    C -->|"Flag"| D["--disable-blink-features=AutomationControlled"]
+    C -->|"Profile"| E["Persistent Session Cache (~/.local/share/x-browser-profile)"]
+    B -->|"WebSocket"| F["Chrome DevTools Protocol (CDP)"]
     
-    subgraph Media & Clipboard Pipeline
-        G[Local Image / Media] --> H[copy-to-clipboard.ts]
-        H -->|macOS: Swift / Win: PowerShell / Linux: xclip| I[OS System Clipboard]
-        I --> J[paste-from-clipboard.ts]
-        J -->|Native Keystroke Cmd+V / Ctrl+V| K[Chrome Active Viewport]
+    subgraph MediaPipeline ["Media & Clipboard Pipeline"]
+        G["Local Image or Media"] --> H["copy-to-clipboard.ts"]
+        H -->|"macOS: Swift / Win: PowerShell / Linux: xclip"| I["OS System Clipboard"]
+        I --> J["paste-from-clipboard.ts"]
+        J -->|"Native Keystrokes (Cmd+V / Ctrl+V)"| K["Chrome Active Viewport"]
     end
     
-    F --> L[Input.insertText / DOM.setFileInputFiles]
-    L --> M[X / Twitter Compose Engine]
+    F --> L["Input.insertText / DOM.setFileInputFiles"]
+    L --> M["X Compose Engine"]
     K --> M
-    M --> N[Published Tweet / Video / Article]
+    M --> N["Published Tweet / Video / Article"]
 ```
 
 ### Why Real Chrome + Native Keystrokes?
@@ -124,13 +124,13 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    A[X Tweet Video URL] -->|yt-dlp| B[Download Video + Metadata]
-    B -->|ffmpeg| C[Extract 16kHz Audio]
-    C -->|whisper-cli| D[Transcribe to SRT]
-    D --> E[Generate translation.md Draft]
-    E -->|User / AI Edit| F[Edited Copy & SRT]
-    F -->|--confirm| G[ffmpeg Burn Subtitles]
-    G -->|x-video.ts| H[Publish Video + Reply Source Link]
+    A["X Tweet Video URL"] -->|"yt-dlp"| B["Download Video and Metadata"]
+    B -->|"ffmpeg"| C["Extract 16kHz Audio"]
+    C -->|"whisper-cli"| D["Transcribe to SRT"]
+    D --> E["Generate translation.md Draft"]
+    E -->|"User / AI Review"| F["Edited Post Copy and SRT"]
+    F -->|"--confirm"| G["ffmpeg Burn Subtitles"]
+    G -->|"x-video.ts"| H["Publish Video and Reply Source Link"]
 ```
 
 ### Usage Steps:
